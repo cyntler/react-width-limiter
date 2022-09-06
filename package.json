@@ -1,14 +1,14 @@
 {
   "name": "react-width-limiter",
   "version": "0.0.0",
-  "description": "qweqweqweqwe",
+  "description": "The width limiter component for React.",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cyntler/react-width-limiter.git"
   },
   "keywords": [
-    "react"
+    "react", "width", "limiter", "max-width", "renderer", "overflow"
   ],
   "author": "Damian Cyntler",
   "license": "MIT",
