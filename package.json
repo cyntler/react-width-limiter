@@ -1,0 +1,19 @@
+{
+  "name": "react-width-limiter",
+  "version": "0.0.0",
+  "description": "qweqweqweqwe",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyntler/react-width-limiter.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Damian Cyntler",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {}
+}
