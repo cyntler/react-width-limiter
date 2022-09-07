@@ -18,9 +18,13 @@
   "author": "Damian Cyntler",
   "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "typescript": "^4.8.2"
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "typescript": "^4.8.2",
+    "husky": "^6.0.0"
   }
 }
