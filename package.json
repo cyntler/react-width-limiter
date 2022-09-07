@@ -8,12 +8,19 @@
     "url": "git+https://github.com/cyntler/react-width-limiter.git"
   },
   "keywords": [
-    "react", "width", "limiter", "max-width", "renderer", "overflow"
+    "react",
+    "width",
+    "limiter",
+    "max-width",
+    "renderer",
+    "overflow"
   ],
   "author": "Damian Cyntler",
   "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "typescript": "^4.8.2"
+  }
 }
