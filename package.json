@@ -19,6 +19,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
+    "check-types": "tsc --noEmit",
     "release": "release-it",
     "prepare": "husky install"
   },
