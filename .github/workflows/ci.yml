@@ -19,5 +19,9 @@ jobs:
           node-version: ${{ env.NVMRC }}
       - name: Install dependencies
         run: npm i
+      - name: Run tests
+        run: npm run test
       - name: Check TypeScript types
         run: npm run check-types
+      - name: Check Prettier code style
+        run: npm run check-prettier

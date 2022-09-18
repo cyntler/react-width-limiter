@@ -1,1 +1,1 @@
-console.log("lib source code");
+export const calculate = (a: number, b: number) => a + b;
