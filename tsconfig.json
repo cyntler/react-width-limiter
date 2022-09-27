@@ -1,15 +1,16 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
+    "outDir": "dist/esm",
     "target": "ES5",
-    "module": "CommonJS",
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "lib": ["dom", "dom.iterable", "esnext"],
     "declaration": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "moduleResolution": "node",
     "resolveJsonModule": true,
     "jsx": "react-jsx"
-  }
+  },
+  "exclude": ["./dist", "src/**/*.test.ts"]
 }
