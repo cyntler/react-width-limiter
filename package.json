@@ -2,7 +2,9 @@
   "name": "react-width-limiter",
   "version": "0.0.0",
   "description": "The width limiter component for React.",
-  "main": "dist/index.js",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cyntler/react-width-limiter.git"
@@ -18,13 +20,21 @@
   "author": "Damian Cyntler",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "start": "rimraf dist && tsc --watch",
+    "build": "rimraf dist && yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "test": "jest",
     "test:watch": "jest --watch",
     "check-prettier": "prettier --check ./src",
     "check-types": "tsc --noEmit",
     "release": "release-it",
     "prepare": "husky install"
+  },
+  "dependencies": {
+    "@types/react": "^18.0.20",
+    "@types/styled-components": "^5.1.26",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
@@ -35,7 +45,11 @@
     "jest-environment-jsdom": "^29.0.3",
     "prettier": "^2.7.1",
     "release-it": "^15.4.2",
+    "rimraf": "^3.0.2",
     "ts-jest": "^29.0.1",
     "typescript": "^4.8.2"
+  },
+  "peerDependencies": {
+    "react": ">=16.8"
   }
 }
