@@ -12,5 +12,5 @@
     "resolveJsonModule": true,
     "jsx": "react-jsx"
   },
-  "exclude": ["./dist", "src/**/*.test.ts"]
+  "exclude": ["./dist", "src/**/*.test.tsx"]
 }
