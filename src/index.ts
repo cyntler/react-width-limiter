@@ -1,1 +1,1 @@
-export const calculate = (a: number, b: number) => a + b;
+export { WidthLimiter } from './WidthLimiter';
