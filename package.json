@@ -22,8 +22,8 @@
   "scripts": {
     "start": "rimraf dist && tsc --watch",
     "build": "rimraf dist && npm run build:esm && npm run build:cjs",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "build:esm": "tsc -p tsconfig.build.json",
+    "build:cjs": "tsc -p tsconfig.build.json --module commonjs --outDir dist/cjs",
     "test": "jest",
     "test:watch": "jest --watch",
     "check-prettier": "prettier --check ./src",
